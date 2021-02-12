@@ -18,9 +18,21 @@
           "checksum": "SHA-256:9cb81806f5827bc35eb726d43342edbcadc5b9e1300e37343fc1ce3922680c14",
           "size": "4950714",
           "boards": [
-            {
-              "name": "Support all Arduino SAMD (32-bits ARM Cortex-M0+) Boards"
-            }
+            { "name": "Arduino MKR WiFi 1010" },
+            { "name": "Arduino Zero" },
+            { "name": "Arduino MKR1000" },
+            { "name": "Arduino MKRZERO" },
+            { "name": "Arduino MKR FOX 1200" },
+            { "name": "Arduino MKR WAN 1300" },
+            { "name": "Arduino MKR WAN 1310" },
+            { "name": "Arduino MKR GSM 1400" },
+            { "name": "Arduino MKR NB 1500" },
+            { "name": "Arduino MKR Vidor 4000" },
+            { "name": "Arduino Nano 33 IoT" },
+            { "name": "Arduino M0 Pro" },
+            { "name": "Arduino M0" },
+            { "name": "Arduino Tian" },
+            { "name": "Adafruit Circuit Playground Express" }
           ],
           "toolsDependencies":
           [
