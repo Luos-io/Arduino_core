@@ -13,10 +13,10 @@
           "architecture": "samd",
           "version": "1.8.11",
           "category": "Contributed",
-          "url": "https://github.com/Luos-io/Arduino_core/raw/main/samd_Luos_1.8.11.zip",
+          "url": "https://github.com/Luos-io/Arduino_core/releases/download/1.8.11/samd_Luos_1.8.11.zip",
           "archiveFileName": "samd_Luos_1.8.11.zip",
-          "checksum": "SHA-256:9cb81806f5827bc35eb726d43342edbcadc5b9e1300e37343fc1ce3922680c14",
-          "size": "4950714",
+          "checksum": "SHA-256:656e3327b92fc9688407d49cc7a6443e76b5a99d92243ee5d0babb837bda2ea9",
+          "size": "12930851",
           "boards": [
             { "name": "Arduino MKR WiFi 1010" },
             { "name": "Arduino Zero" },
