@@ -9,8 +9,7 @@ Copy and paste the following URL into the File > Preferences > "Additional Board
 https://raw.githubusercontent.com/Luos-io/Arduino_core/main/package_luos_index.json
 ```
 
-Make sure to also install the Arduino SAMD Library at the same time.
+Now you can install the Luos adapted Arduino SAMD Library !
 
-Boards > "Add board definition" > Search for "Robotics Masters" > Install Robo HAT Library
+Boards > "Add board definition" > Search for "Luos" > Install "Luos adapted Arduino SAMD (32-bits ARM Cortex-M0+) Boards"
 
-Boards > "Add board definition" > Search for "SAMD" > Install Arduino SAMD Library
