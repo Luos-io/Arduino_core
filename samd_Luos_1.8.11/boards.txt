@@ -1,0 +1,569 @@
+# Copyright (c) 2014-2017 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+# Luos adapted Arduino Zero (Prorgamming Port)
+# ---------------------------------------
+luos_arduino_zero_edbg.name=Luos adapted Arduino Zero (Programming Port)
+luos_arduino_zero_edbg.vid.0=0x03eb
+luos_arduino_zero_edbg.pid.0=0x2157
+
+luos_arduino_zero_edbg.upload.tool=openocd
+luos_arduino_zero_edbg.upload.protocol=sam-ba
+luos_arduino_zero_edbg.upload.maximum_size=262144
+luos_arduino_zero_edbg.upload.maximum_data_size=32768
+luos_arduino_zero_edbg.upload.use_1200bps_touch=false
+luos_arduino_zero_edbg.upload.wait_for_upload_port=false
+luos_arduino_zero_edbg.upload.native_usb=false
+luos_arduino_zero_edbg.build.mcu=cortex-m0plus
+luos_arduino_zero_edbg.build.f_cpu=48000000L
+luos_arduino_zero_edbg.build.usb_product="Arduino Zero"
+luos_arduino_zero_edbg.build.usb_manufacturer="Arduino LLC"
+luos_arduino_zero_edbg.build.board=SAMD_ZERO
+luos_arduino_zero_edbg.build.core=arduino
+luos_arduino_zero_edbg.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+luos_arduino_zero_edbg.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_arduino_zero_edbg.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_arduino_zero_edbg.build.variant=arduino_zero-luos
+luos_arduino_zero_edbg.build.variant_system_lib=
+luos_arduino_zero_edbg.build.vid=0x2341
+luos_arduino_zero_edbg.build.pid=0x804d
+luos_arduino_zero_edbg.bootloader.tool=openocd
+luos_arduino_zero_edbg.bootloader.file=zero/samd21_sam_ba.bin
+
+# Luos adapted Arduino Zero (Native USB Port)
+# --------------------------------------
+luos_arduino_zero_native.name=Luos adapted Arduino Zero (Native USB Port)
+luos_arduino_zero_native.vid.0=0x2341
+luos_arduino_zero_native.pid.0=0x804d
+luos_arduino_zero_native.vid.1=0x2341
+luos_arduino_zero_native.pid.1=0x004d
+luos_arduino_zero_native.vid.2=0x2341
+luos_arduino_zero_native.pid.2=0x824d
+luos_arduino_zero_native.vid.3=0x2341
+luos_arduino_zero_native.pid.3=0x024d
+
+luos_arduino_zero_native.upload.tool=bossac
+luos_arduino_zero_native.upload.protocol=sam-ba
+luos_arduino_zero_native.upload.maximum_size=262144
+luos_arduino_zero_native.upload.maximum_data_size=32768
+luos_arduino_zero_native.upload.use_1200bps_touch=true
+luos_arduino_zero_native.upload.wait_for_upload_port=true
+luos_arduino_zero_native.upload.native_usb=true
+luos_arduino_zero_native.build.mcu=cortex-m0plus
+luos_arduino_zero_native.build.f_cpu=48000000L
+luos_arduino_zero_native.build.usb_product="Arduino Zero"
+luos_arduino_zero_native.build.usb_manufacturer="Arduino LLC"
+luos_arduino_zero_native.build.board=SAMD_ZERO
+luos_arduino_zero_native.build.core=arduino
+luos_arduino_zero_native.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+luos_arduino_zero_native.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_arduino_zero_native.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_arduino_zero_native.build.variant=arduino_zero
+luos_arduino_zero_native.build.variant_system_lib=
+luos_arduino_zero_native.build.vid=0x2341
+luos_arduino_zero_native.build.pid=0x804d
+luos_arduino_zero_native.bootloader.tool=openocd
+luos_arduino_zero_native.bootloader.file=zero/samd21_sam_ba.bin
+
+# Luos adapted Arduino MKR1000
+# -----------------------
+luos_mkr1000.name=Luos adapted Arduino MKR1000
+luos_mkr1000.vid.0=0x2341
+luos_mkr1000.pid.0=0x804e
+luos_mkr1000.vid.1=0x2341
+luos_mkr1000.pid.1=0x004e
+luos_mkr1000.vid.2=0x2341
+luos_mkr1000.pid.2=0x824e
+luos_mkr1000.vid.3=0x2341
+luos_mkr1000.pid.3=0x024e
+
+luos_mkr1000.upload.tool=bossac
+luos_mkr1000.upload.protocol=sam-ba
+luos_mkr1000.upload.maximum_size=262144
+luos_mkr1000.upload.maximum_data_size=32768
+luos_mkr1000.upload.use_1200bps_touch=true
+luos_mkr1000.upload.wait_for_upload_port=true
+luos_mkr1000.upload.native_usb=true
+luos_mkr1000.build.mcu=cortex-m0plus
+luos_mkr1000.build.f_cpu=48000000L
+luos_mkr1000.build.usb_product="Arduino MKR1000"
+luos_mkr1000.build.usb_manufacturer="Arduino LLC"
+luos_mkr1000.build.board=SAMD_MKR1000
+luos_mkr1000.build.core=arduino
+luos_mkr1000.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags}
+luos_mkr1000.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkr1000.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkr1000.build.variant=mkr1000
+luos_mkr1000.build.vid=0x2341
+luos_mkr1000.build.pid=0x804e
+luos_mkr1000.bootloader.tool=openocd
+luos_mkr1000.bootloader.file=mkr1000/samd21_sam_ba_arduino_mkr1000.bin
+
+# Luos adapted Arduino MKRZero
+# ---------------
+luos_mkrzero.name=Luos adapted Arduino MKRZERO
+luos_mkrzero.vid.0=0x2341
+luos_mkrzero.pid.0=0x804f
+luos_mkrzero.vid.1=0x2341
+luos_mkrzero.pid.1=0x004f
+
+luos_mkrzero.upload.tool=bossac
+luos_mkrzero.upload.protocol=sam-ba
+luos_mkrzero.upload.maximum_size=262144
+luos_mkrzero.upload.maximum_data_size=32768
+luos_mkrzero.upload.use_1200bps_touch=true
+luos_mkrzero.upload.wait_for_upload_port=true
+luos_mkrzero.upload.native_usb=true
+luos_mkrzero.build.mcu=cortex-m0plus
+luos_mkrzero.build.f_cpu=48000000L
+luos_mkrzero.build.usb_product="Arduino MKRZero"
+luos_mkrzero.build.usb_manufacturer="Arduino LLC"
+luos_mkrzero.build.board=SAMD_MKRZERO
+luos_mkrzero.build.core=arduino
+luos_mkrzero.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags}
+luos_mkrzero.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkrzero.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkrzero.build.variant=mkrzero
+luos_mkrzero.build.vid=0x2341
+luos_mkrzero.build.pid=0x804f
+luos_mkrzero.bootloader.tool=openocd
+luos_mkrzero.bootloader.file=mkrzero/samd21_sam_ba_arduino_mkrzero.bin
+
+# Luos adapted Arduino MKR WiFi 1010
+# --------------------
+luos_mkrwifi1010.name=Luos adapted Arduino MKR WiFi 1010
+luos_mkrwifi1010.vid.0=0x2341
+luos_mkrwifi1010.pid.0=0x8054
+luos_mkrwifi1010.vid.1=0x2341
+luos_mkrwifi1010.pid.1=0x0054
+
+luos_mkrwifi1010.upload.tool=bossac
+luos_mkrwifi1010.upload.protocol=sam-ba
+luos_mkrwifi1010.upload.maximum_size=262144
+luos_mkrwifi1010.upload.maximum_data_size=32768
+luos_mkrwifi1010.upload.use_1200bps_touch=true
+luos_mkrwifi1010.upload.wait_for_upload_port=true
+luos_mkrwifi1010.upload.native_usb=true
+luos_mkrwifi1010.build.mcu=cortex-m0plus
+luos_mkrwifi1010.build.f_cpu=48000000L
+luos_mkrwifi1010.build.usb_product="Arduino MKR WiFi 1010"
+luos_mkrwifi1010.build.usb_manufacturer="Arduino LLC"
+luos_mkrwifi1010.build.board=SAMD_MKRWIFI1010
+luos_mkrwifi1010.build.core=arduino
+luos_mkrwifi1010.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DUSE_BQ24195L_PMIC
+luos_mkrwifi1010.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkrwifi1010.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkrwifi1010.build.variant=mkrwifi1010
+luos_mkrwifi1010.build.vid=0x2341
+luos_mkrwifi1010.build.pid=0x8054
+luos_mkrwifi1010.bootloader.tool=openocd
+luos_mkrwifi1010.bootloader.file=mkrwifi1010/samd21_sam_ba_arduino_mkrwifi1010.bin
+#luos_mkrwifi1010.arduinoota.extraflags=-d
+
+# Luos adapted Arduino NANO 33 IoT
+# --------------------
+luos_nano_33_iot.name=Luos adapted Arduino NANO 33 IoT
+luos_nano_33_iot.vid.0=0x2341
+luos_nano_33_iot.pid.0=0x8057
+luos_nano_33_iot.vid.1=0x2341
+luos_nano_33_iot.pid.1=0x0057
+
+luos_nano_33_iot.upload.tool=bossac
+luos_nano_33_iot.upload.protocol=sam-ba
+luos_nano_33_iot.upload.maximum_size=262144
+luos_nano_33_iot.upload.maximum_data_size=32768
+luos_nano_33_iot.upload.use_1200bps_touch=true
+luos_nano_33_iot.upload.wait_for_upload_port=true
+luos_nano_33_iot.upload.native_usb=true
+luos_nano_33_iot.build.mcu=cortex-m0plus
+luos_nano_33_iot.build.f_cpu=48000000L
+luos_nano_33_iot.build.usb_product="Arduino NANO 33 IoT"
+luos_nano_33_iot.build.usb_manufacturer="Arduino LLC"
+luos_nano_33_iot.build.board=SAMD_NANO_33_IOT
+luos_nano_33_iot.build.core=arduino
+luos_nano_33_iot.build.extra_flags=-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
+luos_nano_33_iot.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_nano_33_iot.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_nano_33_iot.build.variant=nano_33_iot
+luos_nano_33_iot.build.vid=0x2341
+luos_nano_33_iot.build.pid=0x8057
+luos_nano_33_iot.bootloader.tool=openocd
+luos_nano_33_iot.bootloader.file=nano_33_iot/samd21_sam_ba_arduino_nano_33_iot.bin
+
+# Luos adapted Arduino MKR FOX 1200
+# --------------------
+luos_mkrfox1200.name=Luos adapted Arduino MKR FOX 1200
+luos_mkrfox1200.vid.0=0x2341
+luos_mkrfox1200.pid.0=0x8050
+luos_mkrfox1200.vid.1=0x2341
+luos_mkrfox1200.pid.1=0x0050
+
+luos_mkrfox1200.upload.tool=bossac
+luos_mkrfox1200.upload.protocol=sam-ba
+luos_mkrfox1200.upload.maximum_size=262144
+luos_mkrfox1200.upload.maximum_data_size=32768
+luos_mkrfox1200.upload.use_1200bps_touch=true
+luos_mkrfox1200.upload.wait_for_upload_port=true
+luos_mkrfox1200.upload.native_usb=true
+luos_mkrfox1200.build.mcu=cortex-m0plus
+luos_mkrfox1200.build.f_cpu=48000000L
+luos_mkrfox1200.build.usb_product="Arduino MKR FOX 1200"
+luos_mkrfox1200.build.usb_manufacturer="Arduino LLC"
+luos_mkrfox1200.build.board=SAMD_MKRFox1200
+luos_mkrfox1200.build.core=arduino
+luos_mkrfox1200.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DVERY_LOW_POWER
+luos_mkrfox1200.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkrfox1200.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkrfox1200.build.variant=mkrfox1200
+luos_mkrfox1200.build.vid=0x2341
+luos_mkrfox1200.build.pid=0x8050
+luos_mkrfox1200.bootloader.tool=openocd
+luos_mkrfox1200.bootloader.file=mkrfox1200/samd21_sam_ba_arduino_mkrfox1200.bin
+
+# Luos adapted Arduino MKR WAN 1300
+# --------------------
+luos_mkrwan1300.name=Luos adapted Arduino MKR WAN 1300
+luos_mkrwan1300.vid.0=0x2341
+luos_mkrwan1300.pid.0=0x8053
+luos_mkrwan1300.vid.1=0x2341
+luos_mkrwan1300.pid.1=0x0053
+
+luos_mkrwan1300.upload.tool=bossac
+luos_mkrwan1300.upload.protocol=sam-ba
+luos_mkrwan1300.upload.maximum_size=262144
+luos_mkrwan1300.upload.maximum_data_size=32768
+luos_mkrwan1300.upload.use_1200bps_touch=true
+luos_mkrwan1300.upload.wait_for_upload_port=true
+luos_mkrwan1300.upload.native_usb=true
+luos_mkrwan1300.build.mcu=cortex-m0plus
+luos_mkrwan1300.build.f_cpu=48000000L
+luos_mkrwan1300.build.usb_product="Arduino MKR WAN 1300"
+luos_mkrwan1300.build.usb_manufacturer="Arduino LLC"
+luos_mkrwan1300.build.board=SAMD_MKRWAN1300
+luos_mkrwan1300.build.core=arduino
+luos_mkrwan1300.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags}
+luos_mkrwan1300.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkrwan1300.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkrwan1300.build.variant=mkrwan1300
+luos_mkrwan1300.build.vid=0x2341
+luos_mkrwan1300.build.pid=0x8053
+luos_mkrwan1300.bootloader.tool=openocd
+luos_mkrwan1300.bootloader.file=mkrwan1300/samd21_sam_ba_arduino_mkrwan1300.bin
+
+# Luos adapted Arduino MKR WAN 1310
+# --------------------
+luos_mkrwan1310.name=Luos adapted Arduino MKR WAN 1310
+luos_mkrwan1310.vid.0=0x2341
+luos_mkrwan1310.pid.0=0x8059
+luos_mkrwan1310.vid.1=0x2341
+luos_mkrwan1310.pid.1=0x0059
+
+luos_mkrwan1310.upload.tool=bossac
+luos_mkrwan1310.upload.protocol=sam-ba
+luos_mkrwan1310.upload.maximum_size=262144
+luos_mkrwan1310.upload.maximum_data_size=32768
+luos_mkrwan1310.upload.use_1200bps_touch=true
+luos_mkrwan1310.upload.wait_for_upload_port=true
+luos_mkrwan1310.upload.native_usb=true
+luos_mkrwan1310.build.mcu=cortex-m0plus
+luos_mkrwan1310.build.f_cpu=48000000L
+luos_mkrwan1310.build.usb_product="Arduino MKR WAN 1310"
+luos_mkrwan1310.build.usb_manufacturer="Arduino LLC"
+luos_mkrwan1310.build.board=SAMD_MKRWAN1310
+luos_mkrwan1310.build.core=arduino
+luos_mkrwan1310.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DUSE_BQ24195L_PMIC -DVERY_LOW_POWER
+luos_mkrwan1310.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkrwan1310.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkrwan1310.build.variant=mkrwan1300
+luos_mkrwan1310.build.vid=0x2341
+luos_mkrwan1310.build.pid=0x8059
+luos_mkrwan1310.bootloader.tool=openocd
+luos_mkrwan1310.bootloader.file=mkrwan1300/samd21_sam_ba_arduino_mkrwan1310.bin
+
+# Luos adapted Arduino MKR GSM 1400
+# --------------------
+luos_mkrgsm1400.name=Luos adapted Arduino MKR GSM 1400
+luos_mkrgsm1400.vid.0=0x2341
+luos_mkrgsm1400.pid.0=0x8052
+luos_mkrgsm1400.vid.1=0x2341
+luos_mkrgsm1400.pid.1=0x0052
+
+luos_mkrgsm1400.upload.tool=bossac
+luos_mkrgsm1400.upload.protocol=sam-ba
+luos_mkrgsm1400.upload.maximum_size=262144
+luos_mkrgsm1400.upload.maximum_data_size=32768
+luos_mkrgsm1400.upload.use_1200bps_touch=true
+luos_mkrgsm1400.upload.wait_for_upload_port=true
+luos_mkrgsm1400.upload.native_usb=true
+luos_mkrgsm1400.build.mcu=cortex-m0plus
+luos_mkrgsm1400.build.f_cpu=48000000L
+luos_mkrgsm1400.build.usb_product="Arduino MKR GSM 1400"
+luos_mkrgsm1400.build.usb_manufacturer="Arduino LLC"
+luos_mkrgsm1400.build.board=SAMD_MKRGSM1400
+luos_mkrgsm1400.build.core=arduino
+luos_mkrgsm1400.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DUSE_BQ24195L_PMIC
+luos_mkrgsm1400.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkrgsm1400.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkrgsm1400.build.variant=mkrgsm1400
+luos_mkrgsm1400.build.vid=0x2341
+luos_mkrgsm1400.build.pid=0x8052
+luos_mkrgsm1400.bootloader.tool=openocd
+luos_mkrgsm1400.bootloader.file=mkrgsm1400/samd21_sam_ba_arduino_mkrgsm1400.bin
+
+# Luos adapted Arduino MKR NB 1500
+# --------------------
+luos_mkrnb1500.name=Luos adapted Arduino MKR NB 1500
+luos_mkrnb1500.vid.0=0x2341
+luos_mkrnb1500.pid.0=0x8055
+luos_mkrnb1500.vid.1=0x2341
+luos_mkrnb1500.pid.1=0x0055
+
+luos_mkrnb1500.upload.tool=bossac
+luos_mkrnb1500.upload.protocol=sam-ba
+luos_mkrnb1500.upload.maximum_size=262144
+luos_mkrnb1500.upload.maximum_data_size=32768
+luos_mkrnb1500.upload.use_1200bps_touch=true
+luos_mkrnb1500.upload.wait_for_upload_port=true
+luos_mkrnb1500.upload.native_usb=true
+luos_mkrnb1500.build.mcu=cortex-m0plus
+luos_mkrnb1500.build.f_cpu=48000000L
+luos_mkrnb1500.build.usb_product="Arduino MKR NB 1500"
+luos_mkrnb1500.build.usb_manufacturer="Arduino LLC"
+luos_mkrnb1500.build.board=SAMD_MKRNB1500
+luos_mkrnb1500.build.core=arduino
+luos_mkrnb1500.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DUSE_BQ24195L_PMIC
+luos_mkrnb1500.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkrnb1500.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkrnb1500.build.variant=mkrnb1500
+luos_mkrnb1500.build.vid=0x2341
+luos_mkrnb1500.build.pid=0x8055
+luos_mkrnb1500.bootloader.tool=openocd
+luos_mkrnb1500.bootloader.file=mkrnb1500/samd21_sam_ba_arduino_mkrnb1500.bin
+
+# Luos adapted Arduino MKR Vidor 4000
+# --------------------
+luos_mkrvidor4000.name=Luos adapted Arduino MKR Vidor 4000
+luos_mkrvidor4000.vid.0=0x2341
+luos_mkrvidor4000.pid.0=0x8056
+luos_mkrvidor4000.vid.1=0x2341
+luos_mkrvidor4000.pid.1=0x0056
+
+luos_mkrvidor4000.upload.tool=bossacI
+luos_mkrvidor4000.upload.protocol=sam-ba
+luos_mkrvidor4000.upload.maximum_size=262144
+luos_mkrvidor4000.upload.maximum_data_size=32768
+luos_mkrvidor4000.upload.use_1200bps_touch=true
+luos_mkrvidor4000.upload.wait_for_upload_port=true
+luos_mkrvidor4000.upload.native_usb=true
+luos_mkrvidor4000.build.mcu=cortex-m0plus
+luos_mkrvidor4000.build.f_cpu=48000000L
+luos_mkrvidor4000.build.usb_product="Arduino MKR Vidor 4000"
+luos_mkrvidor4000.build.usb_manufacturer="Arduino LLC"
+luos_mkrvidor4000.build.board=SAMD_MKRVIDOR4000
+luos_mkrvidor4000.build.core=arduino
+luos_mkrvidor4000.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags} -DUSE_BQ24195L_PMIC
+luos_mkrvidor4000.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mkrvidor4000.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mkrvidor4000.build.variant=mkrvidor4000
+luos_mkrvidor4000.build.vid=0x2341
+luos_mkrvidor4000.build.pid=0x8056
+luos_mkrvidor4000.bootloader.tool=openocd
+luos_mkrvidor4000.bootloader.file=mkrvidor4000/samd21_sam_ba_arduino_mkrvidor4000.bin
+
+# Luos adapted Adafruit Circuit Playground M0
+# ------------------------------
+luos_adafruit_circuitplayground_m0.name=Luos adapted Adafruit Circuit Playground Express
+luos_adafruit_circuitplayground_m0.vid.0=0x239A
+luos_adafruit_circuitplayground_m0.pid.0=0x8018
+luos_adafruit_circuitplayground_m0.vid.1=0x239A
+luos_adafruit_circuitplayground_m0.pid.1=0x0018
+luos_adafruit_circuitplayground_m0.upload.tool=bossac
+luos_adafruit_circuitplayground_m0.upload.protocol=sam-ba
+luos_adafruit_circuitplayground_m0.upload.maximum_size=262144
+luos_adafruit_circuitplayground_m0.upload.maximum_data_size=32768
+luos_adafruit_circuitplayground_m0.upload.use_1200bps_touch=true
+luos_adafruit_circuitplayground_m0.upload.wait_for_upload_port=true
+luos_adafruit_circuitplayground_m0.upload.native_usb=true
+luos_adafruit_circuitplayground_m0.build.mcu=cortex-m0plus
+luos_adafruit_circuitplayground_m0.build.f_cpu=48000000L
+luos_adafruit_circuitplayground_m0.build.usb_product="Circuit Playground Express"
+luos_adafruit_circuitplayground_m0.build.usb_manufacturer="Adafruit"
+luos_adafruit_circuitplayground_m0.build.board=SAMD_CIRCUITPLAYGROUND_EXPRESS
+luos_adafruit_circuitplayground_m0.build.core=arduino
+luos_adafruit_circuitplayground_m0.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21G18A__ {build.usb_flags}
+luos_adafruit_circuitplayground_m0.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_adafruit_circuitplayground_m0.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_adafruit_circuitplayground_m0.build.variant=circuitplay
+luos_adafruit_circuitplayground_m0.build.variant_system_lib=
+luos_adafruit_circuitplayground_m0.build.vid=0x239A
+luos_adafruit_circuitplayground_m0.build.pid=0x8018
+luos_adafruit_circuitplayground_m0.bootloader.tool=openocd
+luos_adafruit_circuitplayground_m0.bootloader.file=circuitplay/circuitplay_m0_samd21g18_sam_ba.bin
+
+# Luos adapted Arduino M0 PRO (with) bootloader - Programming port
+# ---------------------------------------------------
+luos_mzero_pro_bl_dbg.name=Luos adapted Arduino M0 Pro (Programming Port)
+luos_mzero_pro_bl_dbg.vid.0=0x03eb
+luos_mzero_pro_bl_dbg.pid.0=0x2111
+luos_mzero_pro_bl_dbg.upload.tool=openocd-withbootsize
+luos_mzero_pro_bl_dbg.upload.protocol=sam-ba
+luos_mzero_pro_bl_dbg.upload.maximum_size=262144
+luos_mzero_pro_bl_dbg.upload.maximum_data_size=32768
+luos_mzero_pro_bl_dbg.upload.use_1200bps_touch=false
+luos_mzero_pro_bl_dbg.upload.wait_for_upload_port=false
+luos_mzero_pro_bl_dbg.upload.native_usb=false
+luos_mzero_pro_bl_dbg.build.mcu=cortex-m0plus
+luos_mzero_pro_bl_dbg.build.f_cpu=48000000L
+luos_mzero_pro_bl_dbg.build.usb_product="Arduino M0 Pro"
+luos_mzero_pro_bl_dbg.build.board=SAM_ZERO
+luos_mzero_pro_bl_dbg.build.core=arduino
+luos_mzero_pro_bl_dbg.build.extra_flags=-D__SAMD21G18A__ -mthumb {build.usb_flags}
+luos_mzero_pro_bl_dbg.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mzero_pro_bl_dbg.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mzero_pro_bl_dbg.build.variant=arduino_mzero
+luos_mzero_pro_bl_dbg.build.variant_system_lib=
+luos_mzero_pro_bl_dbg.build.vid=0x2a03
+luos_mzero_pro_bl_dbg.build.pid=0x804f
+luos_mzero_pro_bl_dbg.build.preferred_out_format=hex
+luos_mzero_pro_bl_dbg.bootloader.size=0x4000
+
+luos_mzero_pro_bl_dbg.bootloader.tool=openocd-withbootsize
+luos_mzero_pro_bl_dbg.bootloader.cmd_unprotect=at91samd bootloader 0
+luos_mzero_pro_bl_dbg.bootloader.cmd_protect=at91samd bootloader 16384
+luos_mzero_pro_bl_dbg.bootloader.cmd_protect_verify=at91samd bootloader
+luos_mzero_pro_bl_dbg.bootloader.file=mzero/Bootloader_D21_M0_Pro_150427.hex
+
+# Luos adapted Arduino M0 PRO (with) bootloader - Native port
+# ----------------------------------------------
+luos_mzero_pro_bl.name=Luos adapted Arduino M0 Pro (Native USB Port)
+luos_mzero_pro_bl.vid.0=0x2a03
+luos_mzero_pro_bl.pid.0=0x004d
+luos_mzero_pro_bl.vid.1=0x2a03
+luos_mzero_pro_bl.pid.1=0x804d
+luos_mzero_pro_bl.vid.2=0x2a03
+luos_mzero_pro_bl.pid.2=0x004f
+luos_mzero_pro_bl.vid.3=0x2a03
+luos_mzero_pro_bl.pid.3=0x804f
+luos_mzero_pro_bl.upload.tool=avrdude
+luos_mzero_pro_bl.upload.protocol=stk500v2
+luos_mzero_pro_bl.upload.maximum_size=262144
+luos_mzero_pro_bl.upload.maximum_data_size=32768
+luos_mzero_pro_bl.upload.use_1200bps_touch=true
+luos_mzero_pro_bl.upload.wait_for_upload_port=true
+luos_mzero_pro_bl.upload.native_usb=true
+luos_mzero_pro_bl.upload.speed=57600
+luos_mzero_pro_bl.build.mcu=cortex-m0plus
+luos_mzero_pro_bl.build.f_cpu=48000000L
+luos_mzero_pro_bl.build.usb_product="Arduino M0 Pro"
+luos_mzero_pro_bl.build.board=SAM_ZERO
+luos_mzero_pro_bl.build.core=arduino
+luos_mzero_pro_bl.build.extra_flags=-D__SAMD21G18A__ -mthumb {build.usb_flags}
+luos_mzero_pro_bl.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mzero_pro_bl.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mzero_pro_bl.build.variant=arduino_mzero
+luos_mzero_pro_bl.build.variant_system_lib=
+luos_mzero_pro_bl.build.vid=0x2a03
+luos_mzero_pro_bl.build.pid=0x804f
+luos_mzero_pro_bl.build.preferred_out_format=hex
+luos_mzero_pro_bl.bootloader.size=0x4000
+luos_mzero_pro_bl.build.emu.mcu=atmega2560
+luos_mzero_pro_bl.bootloader.tool=openocd-withbootsize
+luos_mzero_pro_bl.bootloader.file=mzero/Bootloader_D21_M0_Pro_150427.hex
+luos_mzero_pro_bl.bootloader.low_fuses=0xff
+
+# Luos adapted Arduino M0 (with) Bootloader
+# ----------------------------
+luos_mzero_bl.name=Luos adapted Arduino M0
+luos_mzero_bl.vid.0=0x2a03
+luos_mzero_bl.pid.0=0x004d
+luos_mzero_bl.vid.1=0x2a03
+luos_mzero_bl.pid.1=0x804d
+luos_mzero_bl.vid.2=0x2a03
+luos_mzero_bl.pid.2=0x004e
+luos_mzero_bl.vid.3=0x2a03
+luos_mzero_bl.pid.3=0x804e
+luos_mzero_bl.upload.tool=avrdude
+luos_mzero_bl.upload.protocol=stk500v2
+luos_mzero_bl.upload.maximum_size=262144
+luos_mzero_bl.upload.maximum_data_size=32768
+luos_mzero_bl.upload.use_1200bps_touch=true
+luos_mzero_bl.upload.wait_for_upload_port=true
+luos_mzero_bl.upload.native_usb=true
+luos_mzero_bl.upload.speed=57600
+luos_mzero_bl.build.mcu=cortex-m0plus
+luos_mzero_bl.build.f_cpu=48000000L
+luos_mzero_bl.build.usb_product="Arduino M0"
+luos_mzero_bl.build.board=SAM_ZERO
+luos_mzero_bl.build.core=arduino
+luos_mzero_bl.build.extra_flags=-D__SAMD21G18A__ -mthumb {build.usb_flags}
+luos_mzero_bl.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_mzero_bl.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_mzero_bl.build.variant=arduino_mzero
+luos_mzero_bl.build.variant_system_lib=
+luos_mzero_bl.build.vid=0x2a03
+luos_mzero_bl.build.pid=0x804e
+luos_mzero_bl.build.preferred_out_format=hex
+luos_mzero_bl.bootloader.size=0x4000
+luos_mzero_bl.build.emu.mcu=atmega2560
+luos_mzero_bl.bootloader.tool=openocd-withbootsize
+luos_mzero_bl.bootloader.low_fuses=0xff
+luos_mzero_bl.bootloader.file=mzero/Bootloader_D21_M0_150515.hex
+
+# Luos adapted Arduino Tian (with) Bootloader
+# ------------------------------
+luos_tian.name=Luos adapted Arduino Tian
+luos_tian.upload.via_ssh=true
+luos_tian.vid.0=0x10C4
+luos_tian.pid.0=0xEA70
+luos_tian.descriptor.0=Enhanced Com Port
+
+luos_tian.upload.tool=avrdude
+#luos_tian.upload.protocol=stk500v2
+luos_tian.upload.protocol=wiring
+luos_tian.upload.maximum_size=262144
+luos_tian.upload.maximum_data_size=32768
+luos_tian.upload.use_1200bps_touch=true
+luos_tian.upload.wait_for_upload_port=true
+luos_tian.upload.native_usb=true
+luos_tian.upload.speed=57600
+luos_tian.build.mcu=cortex-m0plus
+luos_tian.build.f_cpu=48000000L
+luos_tian.build.usb_product="Arduino Tian"
+luos_tian.build.board=SAMD_TIAN
+luos_tian.build.core=arduino
+luos_tian.build.extra_flags=-D__SAMD21G18A__ -mthumb {build.usb_flags}
+luos_tian.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+luos_tian.build.openocdscript=openocd_scripts/arduino_zero.cfg
+luos_tian.build.variant=arduino_mzero
+luos_tian.build.variant_system_lib=
+luos_tian.build.vid=0x2a03
+luos_tian.build.pid=0x8052
+luos_tian.build.preferred_out_format=hex
+luos_tian.bootloader.size=0x4000
+luos_tian.build.emu.mcu=atmega2560
+luos_tian.bootloader.tool=openocd-withbootsize
+luos_tian.bootloader.low_fuses=0xff
+luos_tian.bootloader.file=sofia/Sofia_Tian_151118.hex
+luos_tian.drivers=SiliconLabs-CP2105/Silicon Labs VCP Driver.pkg
+
+# Luos adapted Arduino Tian Console port (not for upload)
+# ------------------------------------------
+luos_tian_cons.name=Luos adapted Arduino Tian (MIPS Console port)
+luos_tian_cons.vid.0=0x10C4
+luos_tian_cons.pid.0=0xEA70
+luos_tian_cons.descriptor.0=Standard Com Port
+luos_tian_cons.hide=true
+luos_tian_cons.build.board=SAMD_TIAN
