@@ -19,7 +19,7 @@
           "size": "4950714",
           "boards": [
             {
-              "name": "Luos adapted Arduino SAMD (32-bits ARM Cortex-M0+) Boards"
+              "name": "Support all Arduino SAMD (32-bits ARM Cortex-M0+) Boards"
             }
           ],
           "toolsDependencies":
