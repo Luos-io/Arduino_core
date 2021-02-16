@@ -1,0 +1,6 @@
+{
+    "description":"Luos adapted Arduino SAMD (32-bits ARM Cortex-M0+) Boards",
+    "name":"framework-arduino-samd",
+    "url":"https://github.com/Luos-io/Arduino_core",
+    "version":"1.8.11"
+}
