@@ -92,7 +92,7 @@ static const uint8_t A6  = PIN_A6;
 // SPI Interfaces
 // --------------
 #define SPI_INTERFACES_COUNT 2
- 
+
 // SPI
 #define PIN_SPI_MISO  (10u)
 #define PIN_SPI_MOSI  (8u)
@@ -169,13 +169,17 @@ extern SERCOM sercom3;
 extern SERCOM sercom4;
 extern SERCOM sercom5;
 
-// Serial1
-extern Uart Serial1;
-#define PIN_SERIAL1_RX (13ul)
-#define PIN_SERIAL1_TX (14ul)
 #define PAD_SERIAL1_TX (UART_TX_PAD_2)
 #define PAD_SERIAL1_RX (SERCOM_RX_PAD_3)
+
+// Serial1
+extern Uart Serial1;
+
 #endif // __cplusplus
+
+#define PIN_SERIAL1_RX (13ul)
+#define PIN_SERIAL1_TX (14ul)
+
 
 #ifdef __cplusplus
 extern "C" {

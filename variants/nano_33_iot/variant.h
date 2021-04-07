@@ -168,9 +168,9 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 #define I2S_DEVICE          0
 #define I2S_CLOCK_GENERATOR 3
 
-#define PIN_I2S_SD (4u) 
-#define PIN_I2S_SCK (PIN_A3) 
-#define PIN_I2S_FS (PIN_A2) 
+#define PIN_I2S_SD (4u)
+#define PIN_I2S_SCK (PIN_A3)
+#define PIN_I2S_FS (PIN_A2)
 
 // Serial ports
 // ------------
@@ -188,10 +188,6 @@ extern SERCOM sercom5;  // serial1
 
 // Serial1
 extern Uart Serial1;
-#define PIN_SERIAL1_RX       (0ul)
-#define PIN_SERIAL1_TX       (1ul)
-#define PAD_SERIAL1_TX       (UART_TX_PAD_2)
-#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
 
 // Serial1
 extern Uart Serial2;
@@ -208,8 +204,13 @@ extern Uart SerialHCI;
 #define PIN_SERIALHCI_RTS (24u)
 #define PIN_SERIALHCI_CTS (25u)
 
+#define PAD_SERIAL1_TX       (UART_TX_PAD_2)
+#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
+
 #endif // __cplusplus
 
+#define PIN_SERIAL1_RX       (0ul)
+#define PIN_SERIAL1_TX       (1ul)
 
 
 // These serial port names are intended to allow libraries and architecture-neutral
